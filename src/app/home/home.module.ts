@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
+
 @NgModule({
   declarations: [CarruselComponent],
   imports: [
@@ -14,7 +15,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NgbModule
   ],
   exports: [
-    CarruselComponent
+    CarruselComponent,
   ]
 })
 export class HomeModule { }
