@@ -4,18 +4,22 @@ import { CarruselComponent } from './components/carrusel/carrusel.component';
 
 // IMPORTAR MODULOS NECESARIOS
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormComponent } from './components/form/form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
 
 @NgModule({
-  declarations: [CarruselComponent],
+  declarations: [CarruselComponent, FormComponent],
   imports: [
     CommonModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule
   ],
   exports: [
     CarruselComponent,
+    FormComponent
   ]
 })
 export class HomeModule { }

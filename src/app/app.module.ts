@@ -20,7 +20,7 @@ import { HomeModule } from './home/home.module';
     AppRoutingModule,
     NgbModule,
     SharedModule,
-    HomeModule
+    HomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

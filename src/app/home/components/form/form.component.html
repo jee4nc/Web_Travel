@@ -1,0 +1,25 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()" class="formulario">
+    <div class="btn-group btn-group-toggle" 
+    ngbRadioGroup name="radioBasic" 
+    formControlName="model">
+        <label ngbButtonLabel class="btn-primary">
+            <input ngbButton type="radio" value="Ida"> Solo Ida
+          </label>
+          <label ngbButtonLabel class="btn-primary">
+            <input ngbButton type="radio" value="IdaVuelta"> Ida y Vuelta
+          </label>
+    </div>
+    <div class="container">
+        <label>
+            First Name:
+            <input type="text" formControlName="firstName">
+          </label>
+    </div>
+    <div class="container">
+        <label>
+            Last Name:
+            <input type="text" formControlName="lastName">
+          </label>
+    </div>
+    <button type="submit" class="btn btn-success" [disabled]="!profileForm.valid">Success</button>
+  </form>
