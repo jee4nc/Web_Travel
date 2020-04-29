@@ -1,7 +1,7 @@
 <form [formGroup]="profileForm" (ngSubmit)="onSubmit()" class="formulario">
     <div class="btn-group btn-group-toggle" 
     ngbRadioGroup name="radioBasic" 
-    formControlName="model">
+    formControlName="radioButton">
         <label ngbButtonLabel class="btn-primary">
             <input ngbButton type="radio" value="Ida"> Solo Ida
           </label>
@@ -11,15 +11,21 @@
     </div>
     <div class="container">
         <label>
-            First Name:
-            <input type="text" formControlName="firstName">
+            Lugar de origen:
+            <input type="text" formControlName="origen">
           </label>
     </div>
     <div class="container">
         <label>
-            Last Name:
-            <input type="text" formControlName="lastName">
+            Lugar de destino:
+            <input type="text" formControlName="destino">
           </label>
     </div>
-    <button type="submit" class="btn btn-success" [disabled]="!profileForm.valid">Success</button>
+    <div class="containerDate">
+      <app-datepicker></app-datepicker>
+    </div>
+    <button type="submit" 
+    class="btn btn-success" 
+    [disabled]="!profileForm.valid" 
+    >Success</button>
   </form>

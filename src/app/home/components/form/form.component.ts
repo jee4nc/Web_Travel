@@ -10,9 +10,9 @@ import { FormGroup, FormControl } from '@angular/forms';
 export class FormComponent implements OnInit {
 
   profileForm = new FormGroup({
-    model : new FormControl(''),
-    firstName: new FormControl(''),
-    lastName: new FormControl(''),
+    radioButton : new FormControl(''),
+    origen: new FormControl(''),
+    destino: new FormControl(''),
   });
   constructor() { }
 
@@ -22,5 +22,8 @@ export class FormComponent implements OnInit {
   onSubmit() {
     // TODO: Use EventEmitter with form value
     console.warn(this.profileForm.value);
+    this.profileForm.reset(); // clean inputs
   }
+
+
 }
