@@ -2,10 +2,10 @@
     <div class="btn-group btn-group-toggle" 
     ngbRadioGroup name="radioBasic" 
     formControlName="radioButton">
-        <label ngbButtonLabel class="btn-primary">
+        <label ngbButtonLabel class="btn custom-radio">
             <input ngbButton type="radio" value="Ida"> Solo Ida
           </label>
-          <label ngbButtonLabel class="btn-primary">
+          <label ngbButtonLabel class="btn custom-radio">
             <input ngbButton type="radio" value="IdaVuelta"> Ida y Vuelta
           </label>
     </div>
@@ -22,10 +22,10 @@
           </label>
     </div>
     <div class="containerDate">
-      <app-datepicker></app-datepicker>
+      <app-datepicker formControlName="datee"> </app-datepicker>
     </div>
     <button type="submit" 
-    class="btn btn-success" 
+    class="btn custom-btn" 
     [disabled]="!profileForm.valid" 
     >Success</button>
   </form>

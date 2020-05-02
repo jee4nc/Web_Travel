@@ -13,6 +13,7 @@ export class FormComponent implements OnInit {
     radioButton : new FormControl(''),
     origen: new FormControl(''),
     destino: new FormControl(''),
+    datee: new FormControl(''),
   });
   constructor() { }
 

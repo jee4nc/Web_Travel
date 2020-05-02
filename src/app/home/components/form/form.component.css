@@ -28,3 +28,26 @@
     grid-template-columns: 1fr;
     justify-items: center;
 }
+
+/* CAMBIO DE COLOR DE BOTON */
+.custom-btn, 
+.custom-btn:hover,
+.custom-btn:active,
+.custom-btn:visited,
+.custom-btn:focus {
+    background-color: #f40552 !important;;
+    outline-color: #f405 !important;
+    border: #f405;
+    color: #f8f3eb
+}
+.custom-btn:not(:disabled):not(.disabled).active:focus,
+.custom-btn:not(:disabled):not(.disabled):active:focus,
+.show>.custom-btn.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem #f405
+}
+.custom-radio, .custom-radio:active{
+    background-color: #f40552 !important;;
+    outline-color: #f405 !important;
+    border-color: #f405 !important;
+    color: #f8f3eb;
+}

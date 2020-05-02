@@ -1,0 +1,27 @@
+/* VARIABLES DE COLORES */
+:root {
+    --main-bg-color: #f40552;
+    --main-text-color: #f8f3eb;
+}
+.image {
+    max-width: 50px;
+}
+.navbar-custom {
+    background-color: #f40552;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: black;
+    font-size: 21px;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #c3edea; 
+}
+
