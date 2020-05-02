@@ -7,12 +7,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormComponent } from './components/form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DatepickerComponent } from './components/datepicker/datepicker.component';
+import { CardsComponent } from './components/cards/cards.component';
+import { CardComponent } from './components/card/card.component';
 
 
 
 
 @NgModule({
-  declarations: [CarruselComponent, FormComponent, DatepickerComponent],
+  declarations: [CarruselComponent, FormComponent, DatepickerComponent, CardsComponent, CardComponent],
   imports: [
     CommonModule,
     NgbModule,
@@ -20,7 +22,9 @@ import { DatepickerComponent } from './components/datepicker/datepicker.componen
   ],
   exports: [
     CarruselComponent,
-    FormComponent
+    FormComponent,
+    CardsComponent,
+    CardComponent
   ]
 })
 export class HomeModule { }

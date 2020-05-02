@@ -1,0 +1,25 @@
+.card {
+    border-style: solid;
+    border-color: black;
+    max-width: 300px;
+    display: grid;
+    justify-items: center;
+    gap: 5px;
+    padding: 10px;
+}
+.card img {
+    max-width: 100%;
+}
+
+.custom-btn, 
+.custom-btn:hover,
+.custom-btn:visited,
+.custom-btn:focus {
+    background-color: #f40552 ;
+    outline-color: #f405 ;
+    border: #f405;
+    color: #f8f3eb
+}
+.custom-btn {
+    width: 80%;
+}
